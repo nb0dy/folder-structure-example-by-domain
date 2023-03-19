@@ -3,7 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/quick-menu/feature-quick-menu-drawer/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["type:feature", "domain:quick-menu"],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

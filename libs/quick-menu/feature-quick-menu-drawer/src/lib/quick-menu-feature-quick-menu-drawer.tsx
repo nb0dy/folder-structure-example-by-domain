@@ -1,15 +1,10 @@
 import styled from 'styled-components';
 
-/* eslint-disable-next-line */
-export interface QuickMenuFeatureQuickMenuDrawerProps {}
-
 const StyledQuickMenuFeatureQuickMenuDrawer = styled.div`
   color: pink;
 `;
 
-export function QuickMenuFeatureQuickMenuDrawer(
-  props: QuickMenuFeatureQuickMenuDrawerProps
-) {
+export function QuickMenuFeatureQuickMenuDrawer() {
   return (
     <StyledQuickMenuFeatureQuickMenuDrawer>
       <h1>Welcome to QuickMenuFeatureQuickMenuDrawer!</h1>

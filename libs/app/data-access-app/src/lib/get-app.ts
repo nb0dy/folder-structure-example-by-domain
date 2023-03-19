@@ -1,30 +1,10 @@
-import { routes } from '@folder-structure-example-by-domain/shared/utils/routes';
-import {getAllGames, getAllMedia} from "./get-all-games";
-import {getAllGames, getAllMedia} from "./get-all-media";
+import { getApps } from './get-apps';
+import { TApp } from './model';
 
-type TMultimedia = {
-  name: string;
-  icon: string;
-  type: 'multimedia';
-  link: string;
-};
+export function getApp(id: string | undefined): TApp | null {
+  if (!id) {
+    return null;
+  }
 
-const multimedia: TMultimedia[] = [
-  {
-    name: 'Spotify',
-    icon: 'spotify',
-    type: 'multimedia',
-    link: routes.multimedia.details.url('spotify'),
-  },
-  {
-    name: 'TvAndVideo',
-    icon: 'tvAndVideo',
-    type: 'multimedia',
-    link: routes.multimedia.details.url('tvAndVideo'),
-  },
-];
-
-export function getApp(id: string) {
-  const allApps = [...getAllMedia(), ...getAllGames()]
-  return multimedia;
+  return getApps().find((app) => app.id === id) || null;
 }

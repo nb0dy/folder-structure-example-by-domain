@@ -13,8 +13,87 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "",
+                "onlyDependOnLibsWithTags": []
+              },
+              {
+                "sourceTag": "type:utils",
+                "onlyDependOnLibsWithTags": ["type:const"]
+              },
+              {
+                "sourceTag": "type:utils",
+                "onlyDependOnLibsWithTags": [
+                  "domain:shared",
+                  "domain:settings",
+                  "domain:quick-menu",
+                  "domain:app"
+                ]
+              },
+              {
+                "sourceTag": "type:data-access",
+                "onlyDependOnLibsWithTags": ["type:utils"]
+              },
+              {
+                "sourceTag": "type:data-access",
+                "onlyDependOnLibsWithTags": [
+                  "domain:shared",
+                  "domain:settings",
+                  "domain:quick-menu",
+                  "domain:app"
+                ]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:utils", "type:data-access"]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": [
+                  "domain:shared",
+                  "domain:settings",
+                  "domain:quick-menu",
+                  "domain:app"
+                ]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": [
+                  "type:utils",
+                  "type:data-access",
+                  "type:ui"
+                ]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": [
+                  "domain:shared",
+                  "domain:settings",
+                  "domain:quick-menu",
+                  "domain:app"
+                ]
+              },
+              {
+                "sourceTag": "type:app",
+                "onlyDependOnLibsWithTags": ["type:utils", "type:feature"]
+              },
+              {
+                "sourceTag": "domain:shared",
+                "onlyDependOnLibsWithTags": ["domain:shared"]
+              },
+              {
+                "sourceTag": "domain:settings",
+                "onlyDependOnLibsWithTags": ["domain:settings", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:quick-menu",
+                "onlyDependOnLibsWithTags": [
+                  "domain:quick-menu",
+                  "domain:shared"
+                ]
+              },
+              {
+                "sourceTag": "domain:app",
+                "onlyDependOnLibsWithTags": ["domain:app", "domain:shared"]
               }
             ]
           }

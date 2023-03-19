@@ -1,16 +1,19 @@
-import styled from 'styled-components';
+import { useAuth } from '@folder-structure-example-by-domain/shared/utils/auth';
+import { BrowserRouter } from 'react-router-dom';
 
-import NxWelcome from './nx-welcome';
-
-const StyledApp = styled.div`
-  // Your style here
-`;
+import ApplicationRoutes from './routes';
 
 export function App() {
+  const { loggedIn } = useAuth();
+
+  if (!loggedIn) {
+    return <div>Not logged in</div>;
+  }
+
   return (
-    <StyledApp>
-      <NxWelcome title="playstation" />
-    </StyledApp>
+    <BrowserRouter>
+      <ApplicationRoutes />
+    </BrowserRouter>
   );
 }
 

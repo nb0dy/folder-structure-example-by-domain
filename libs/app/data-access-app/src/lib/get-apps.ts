@@ -1,14 +1,25 @@
 import { routes } from '@folder-structure-example-by-domain/shared/utils/routes';
 
-type TMultimedia = {
-  id: string;
-  name: string;
-  icon: string;
-  type: 'multimedia';
-  link: string;
-};
+import { TApp, TAppType } from './model';
 
-const multimedia: TMultimedia[] = [
+const games: TApp[] = [
+  {
+    id: 'hogwartsLegacy',
+    name: 'Hogwarts Legacy',
+    icon: 'hogwartsLegacy',
+    type: 'game',
+    link: routes.game.details.url('hogwartsLegacy'),
+  },
+  {
+    id: 'greedFall',
+    name: 'Greed Fall',
+    icon: 'greedFall',
+    type: 'game',
+    link: routes.game.details.url('greedFall'),
+  },
+];
+
+const multimedia: TApp[] = [
   {
     id: 'spotify',
     name: 'Spotify',
@@ -18,13 +29,17 @@ const multimedia: TMultimedia[] = [
   },
   {
     id: 'tvAndVideo',
-    name: 'TvAndVideo',
+    name: 'Tv And Video',
     icon: 'tvAndVideo',
     type: 'multimedia',
     link: routes.multimedia.details.url('tvAndVideo'),
   },
 ];
 
-export function getAllMedia() {
-  return multimedia;
+export function getApps(type?: TAppType) {
+  if (!type) {
+    return [...games, ...multimedia];
+  }
+
+  return type === 'game' ? games : multimedia;
 }

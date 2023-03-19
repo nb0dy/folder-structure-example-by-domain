@@ -1,6 +1,6 @@
 export const routes = {
   dashboard: {
-    path: '/',
+    path: '/*',
     url: () => '/',
   },
   game: {
@@ -20,11 +20,11 @@ export const routes = {
     },
   },
   settings: {
-    path: '/settings',
+    path: '/settings/*',
     url: () => '/settings',
     details: {
-      path: 'details/:id',
-      url: (id: string) => '/settings/details/:id'.replace(':id', id),
+      path: ':id',
+      url: (id: string) => '/settings/:id'.replace(':id', id),
     },
   },
 };

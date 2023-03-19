@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nx serve playstation",
     "lint:check": "nx run-many --all --target=lint --parallel",
-    "lint:fix": "nx run-many --all --target=lint --fix --parallel --skip-cache",
+    "lint:fix": "nx run-many --all --target=lint --fix --parallel",
     "format:fix": "nx format:write",
     "format:check": "nx format:check",
     "code:check": "yarn run format:check && yarn run lint:check",

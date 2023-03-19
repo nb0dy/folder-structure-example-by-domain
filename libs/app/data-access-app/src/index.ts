@@ -1,1 +1,2 @@
-export * from './lib/app-data-access-app';
+export * from './lib/get-app';
+export * from './lib/get-apps';

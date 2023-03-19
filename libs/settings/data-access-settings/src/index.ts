@@ -1,1 +1,1 @@
-export * from './lib/settings-data-access-settings';
+export * from './lib/get-settings';

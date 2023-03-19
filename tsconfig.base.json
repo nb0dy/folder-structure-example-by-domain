@@ -18,14 +18,14 @@
       "@folder-structure-example-by-domain/app/data-access-app": [
         "libs/app/data-access-app/src/index.ts"
       ],
-      "@folder-structure-example-by-domain/app/feature-app-details": [
-        "libs/app/feature-app-details/src/index.ts"
+      "@folder-structure-example-by-domain/app/feature-app-hub": [
+        "libs/app/feature-app-hub/src/index.ts"
       ],
-      "@folder-structure-example-by-domain/app/feature-dashboard": [
-        "libs/app/feature-dashboard/src/index.ts"
+      "@folder-structure-example-by-domain/app/ui-app-details": [
+        "libs/app/ui-app-details/src/index.ts"
       ],
-      "@folder-structure-example-by-domain/app/utils-routes": [
-        "libs/app/utils-routes/src/index.ts"
+      "@folder-structure-example-by-domain/app/ui-dashboard": [
+        "libs/app/ui-dashboard/src/index.ts"
       ],
       "@folder-structure-example-by-domain/quick-menu/feature-quick-menu-drawer": [
         "libs/quick-menu/feature-quick-menu-drawer/src/index.ts"
@@ -33,17 +33,14 @@
       "@folder-structure-example-by-domain/settings/data-access-settings": [
         "libs/settings/data-access-settings/src/index.ts"
       ],
-      "@folder-structure-example-by-domain/settings/feature-settings-details": [
-        "libs/settings/feature-settings-details/src/index.ts"
+      "@folder-structure-example-by-domain/settings/feature-settings-hub": [
+        "libs/settings/feature-settings-hub/src/index.ts"
       ],
-      "@folder-structure-example-by-domain/settings/feature-settings-list": [
-        "libs/settings/feature-settings-list/src/index.ts"
+      "@folder-structure-example-by-domain/settings/ui-settings-details": [
+        "libs/settings/ui-settings-details/src/index.ts"
       ],
-      "@folder-structure-example-by-domain/shared/ui/button": [
-        "libs/shared/ui/button/src/index.ts"
-      ],
-      "@folder-structure-example-by-domain/shared/ui/link": [
-        "libs/shared/ui/link/src/index.ts"
+      "@folder-structure-example-by-domain/settings/ui-settings-list": [
+        "libs/settings/ui-settings-list/src/index.ts"
       ],
       "@folder-structure-example-by-domain/shared/utils/auth": [
         "libs/shared/utils/auth/src/index.ts"
